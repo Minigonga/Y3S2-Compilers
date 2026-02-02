@@ -1,6 +1,6 @@
 # Compiler Project
 
-Contains a reference implementation for the compiler project.
+## Grade 18.72/20
 
 ## Participants
 - Pedro Borges (up202207552)
