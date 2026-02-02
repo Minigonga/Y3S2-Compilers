@@ -1,0 +1,6 @@
+class ClassNotImported1 {
+    A foo() {
+        A a;
+        return a;
+    }
+}

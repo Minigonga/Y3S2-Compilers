@@ -1,0 +1,24 @@
+import ioPlus;
+import A;
+import io.B;
+
+class ClassField {
+    A a;
+    B b;
+    public int func() {
+        int c;
+        int d;
+        a = new A();
+        b = new B();
+        d = b.func();
+        c = a.func(1);
+        return c;
+    }
+
+    public static void main(String[] args) {
+        ClassField b;
+        int r;
+        b = new ClassField();
+        r = b.func();
+    }
+}

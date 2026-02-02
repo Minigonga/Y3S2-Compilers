@@ -1,0 +1,32 @@
+import ioPlus;
+
+IntField {
+
+
+.field public a.i32;
+
+.construct IntField().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public func().i32 {
+   putfield(this, a.i32, 1.i32).V;
+
+   tmp0.i32 :=.i32 getfield(this, a.i32).i32;
+
+invokestatic(ioPlus, "printResult", tmp0.i32).V;
+   tmp1.i32 :=.i32 getfield(this, a.i32).i32;
+ret.i32 tmp1.i32;
+}
+
+.method public static main(args.array.String).V {
+   tmp2.IntField :=.IntField new(IntField).IntField;
+invokespecial(tmp2.IntField, "<init>").V;
+d.IntField :=.IntField tmp2.IntField;
+
+   b.i32 :=.i32 invokevirtual(d.IntField, "func").i32;
+
+   ret.V ;
+}
+
+}

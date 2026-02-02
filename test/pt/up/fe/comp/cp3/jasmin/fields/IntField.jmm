@@ -1,0 +1,17 @@
+import ioPlus;
+class IntField {
+    int a;
+    public int func() {
+        a = 1;
+        ioPlus.printResult(a);
+        return a;
+    }
+
+    public static void main(String[] args) {
+        IntField d;
+        int b;
+        d = new IntField();
+        b = d.func();
+
+    }
+}

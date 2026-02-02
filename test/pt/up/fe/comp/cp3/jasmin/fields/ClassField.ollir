@@ -1,0 +1,45 @@
+import ioPlus;
+import A;
+import io.B;
+
+ClassField {
+
+
+.field public a.A;
+.field public b.B;
+
+.construct ClassField().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public func().i32 {
+   tmp0.A :=.A new(A).A;
+invokespecial(tmp0.A, "<init>").V;
+putfield(this, a.A, tmp0.A).V;
+
+   tmp1.B :=.B new(B).B;
+invokespecial(tmp1.B, "<init>").V;
+putfield(this, b.B, tmp1.B).V;
+
+   tmp2.B :=.B getfield(this, b.B).B;
+tmp3.i32 :=.i32 invokevirtual(tmp2.B, "func").i32;
+d.i32 :=.i32 tmp3.i32;
+
+   tmp4.A :=.A getfield(this, a.A).A;
+tmp5.i32 :=.i32 invokevirtual(tmp4.A, "func", 1.i32).i32;
+c.i32 :=.i32 tmp5.i32;
+
+   ret.i32 c.i32;
+}
+
+.method public static main(args.array.String).V {
+   tmp6.ClassField :=.ClassField new(ClassField).ClassField;
+invokespecial(tmp6.ClassField, "<init>").V;
+b.ClassField :=.ClassField tmp6.ClassField;
+
+   r.i32 :=.i32 invokevirtual(b.ClassField, "func").i32;
+
+   ret.V ;
+}
+
+}

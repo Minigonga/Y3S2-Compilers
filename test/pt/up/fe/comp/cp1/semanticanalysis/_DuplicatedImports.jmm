@@ -1,0 +1,6 @@
+import A;
+import wat.A;
+
+class DuplicatedImports {
+
+}

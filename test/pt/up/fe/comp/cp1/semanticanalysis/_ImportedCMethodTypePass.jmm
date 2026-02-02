@@ -1,0 +1,8 @@
+import package.A;
+
+class ImportedCMethodType {
+  A foo() {
+    A variable;
+    return variable;
+  }
+}

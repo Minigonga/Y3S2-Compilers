@@ -1,0 +1,28 @@
+import io;
+import foo.Bar;
+import comp.Table;
+
+class ThisOnMethodParameter extends Table {
+
+    int intField;
+    boolean boolField;
+
+    public int method1() {
+        int intLocal1;
+        boolean boolLocal1;
+        Bar barLocal1;
+
+        return this.method2(this.method3(), boolLocal1, barLocal1);
+    }
+
+    public int method2(int intParam1, boolean boolParam1, Bar barParam1) {
+        return intParam1;
+    }
+
+    public int method3() {
+        return 1;
+    }
+
+    public static void main(String[] args) {
+    }
+}

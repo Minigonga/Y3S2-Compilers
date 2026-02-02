@@ -1,0 +1,19 @@
+import ioPlus;
+class ArrayField {
+    int[] a;
+    public int func() {
+        int c;
+        a = new int[1];
+        a[0] = 1;
+        c = a[0];
+        ioPlus.printResult(1);
+        return c;
+    }
+
+    public static void main(String[] args) {
+        ArrayField b;
+        int r;
+        b = new ArrayField();
+        r = b.func();
+    }
+}

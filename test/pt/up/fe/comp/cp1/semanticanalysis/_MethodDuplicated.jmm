@@ -1,0 +1,11 @@
+class DuplicatedMethod {
+
+    int foo() {
+        return 0;
+    }
+
+    boolean foo() {
+        return true;
+    }
+
+}

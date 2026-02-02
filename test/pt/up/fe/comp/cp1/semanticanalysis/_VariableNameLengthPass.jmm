@@ -1,0 +1,6 @@
+class VariableNameLength {
+    int foo() {
+        int length;
+        return 1;
+    }
+}

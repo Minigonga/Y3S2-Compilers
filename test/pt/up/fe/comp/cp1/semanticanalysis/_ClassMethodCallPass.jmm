@@ -1,0 +1,12 @@
+class ClassMethodCall {
+    int foo() {
+        return 1;
+    }
+
+    int bar() {
+        ClassMethodCall a;
+        int b;
+        b = a.foo();
+        return a.foo();
+    }
+}

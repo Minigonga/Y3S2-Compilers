@@ -1,0 +1,23 @@
+import ioPlus;
+class IfElseIfElseStat {
+
+
+    public static void main(String[] args) {
+        int a;
+        int b;
+
+        a = 5;
+        b = 10;
+
+        if(a < b){
+          ioPlus.printResult(a);
+        } else if (b < a) {
+          ioPlus.printResult(b);
+        } else if (b < a) {
+          ioPlus.printResult(b);
+        } else {
+           ioPlus.printResult(b);
+        }
+
+    }
+}

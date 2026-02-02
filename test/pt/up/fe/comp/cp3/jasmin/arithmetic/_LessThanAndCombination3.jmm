@@ -1,0 +1,18 @@
+import ioPlus;
+class LessThanAndCombination {
+
+
+    public static void main(String[] args) {
+        boolean a;
+        int b;
+        b = 3;
+        a = (1 < 2 && (3 < 4 && 5 < 6)) && 0 < b;
+
+        if (a) {
+            ioPlus.printResult(1);
+        } else {
+            ioPlus.printResult(0);
+        }
+
+    }
+}

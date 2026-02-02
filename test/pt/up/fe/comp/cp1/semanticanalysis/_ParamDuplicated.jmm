@@ -1,0 +1,6 @@
+class ParamDuplicated {
+
+    int foo(int a, boolean a) {
+        return 0;
+    }
+}

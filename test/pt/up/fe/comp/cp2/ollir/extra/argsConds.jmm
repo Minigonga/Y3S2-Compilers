@@ -1,0 +1,17 @@
+import io;
+class ArgsConds {
+
+    public static void main(String[] args) {
+        ArgsConds k;
+        boolean result;
+        k = new ArgsConds();
+
+        result = k.foo(1 < 3 , ( 3 < 2));
+
+        io.print(result);
+    }
+
+    public boolean foo(boolean a, boolean b) {
+        return a && b;
+    }
+}

@@ -1,0 +1,38 @@
+import ioPlus;
+
+ArrayField {
+
+
+.field public a.array.i32;
+
+.construct ArrayField().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public func().i32 {
+   tmp0.array.i32 :=.array.i32 new(array, 1.i32).array.i32;
+putfield(this, a.array.i32, tmp0.array.i32).V;
+
+   tmp1.array.i32 :=.array.i32 getfield(this, a.array.i32).array.i32;
+tmp1.array.i32[0.i32].i32 :=.i32 1.i32;
+
+   tmp2.array.i32 :=.array.i32 getfield(this, a.array.i32).array.i32;
+tmp3.i32 :=.i32 tmp2.array.i32[0.i32].i32;
+c.i32 :=.i32 tmp3.i32;
+
+
+invokestatic(ioPlus, "printResult", 1.i32).V;
+   ret.i32 c.i32;
+}
+
+.method public static main(args.array.String).V {
+   tmp4.ArrayField :=.ArrayField new(ArrayField).ArrayField;
+invokespecial(tmp4.ArrayField, "<init>").V;
+b.ArrayField :=.ArrayField tmp4.ArrayField;
+
+   r.i32 :=.i32 invokevirtual(b.ArrayField, "func").i32;
+
+   ret.V ;
+}
+
+}

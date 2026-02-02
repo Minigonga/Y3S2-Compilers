@@ -1,0 +1,11 @@
+import io;
+class Bipush_ {
+	public static void main(String[] args) {
+		int a;
+
+		a = 127;
+
+		io.print(a);
+
+	}
+}

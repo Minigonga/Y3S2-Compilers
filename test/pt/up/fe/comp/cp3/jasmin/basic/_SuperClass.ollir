@@ -1,0 +1,16 @@
+import io0.io.Aa;
+
+Aclass extends Aa  {
+
+
+
+
+.construct Aclass().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public static main(args.array.String).V {
+   ret.V ;
+}
+
+}

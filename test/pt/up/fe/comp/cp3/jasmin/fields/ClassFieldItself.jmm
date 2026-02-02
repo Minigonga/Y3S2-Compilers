@@ -1,0 +1,24 @@
+import ioPlus;
+import A;
+
+class ClassFieldItself {
+    ClassFieldItself a;
+    public int func() {
+        int c;
+        a = new ClassFieldItself();
+        c = a.func2();
+        ioPlus.printResult(c);
+        return c;
+    }
+
+    public int func2(){
+        return 1;
+    }
+
+    public static void main(String[] args) {
+        ClassFieldItself b;
+        int r;
+        b = new ClassFieldItself();
+        r = b.func();
+    }
+}

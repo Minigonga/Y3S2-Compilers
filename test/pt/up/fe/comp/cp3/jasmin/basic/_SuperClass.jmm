@@ -1,0 +1,7 @@
+import io0.io.Aa;
+class Aclass extends Aa {
+
+    public static void main(String[] args) {
+    }
+
+}

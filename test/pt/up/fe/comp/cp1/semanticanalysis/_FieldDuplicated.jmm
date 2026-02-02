@@ -1,0 +1,8 @@
+class FieldDuplicated {
+    int duplicated;
+    boolean duplicated;
+
+    int foo() {
+        return 0;
+    }
+}

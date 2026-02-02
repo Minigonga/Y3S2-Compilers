@@ -1,0 +1,7 @@
+class DuplicatedVariables {
+    int foo() {
+    int a;
+    int a;
+    return 1;
+    }
+}

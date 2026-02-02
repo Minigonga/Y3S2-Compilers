@@ -1,0 +1,8 @@
+class VarargsWrongUse1 {
+    //Da mal porque o varargs so pode ser parametro de um metodo
+    public int... foo() {
+
+        return 0;
+    }
+
+}

@@ -1,0 +1,21 @@
+import ioPlus;
+class BooleanField {
+    boolean c;
+    public boolean func() {
+        c = false;
+        if (c){
+           ioPlus.printResult(1);
+        }
+        else{
+           ioPlus.printResult(0);
+        }
+        return c;
+    }
+
+    public static void main(String[] args) {
+        BooleanField d;
+        boolean k;
+        d = new BooleanField();
+        k = d.func();
+    }
+}

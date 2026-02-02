@@ -1,0 +1,9 @@
+import test.Bar;
+
+class ImportTypePass {
+    int foo() {
+        Bar_ var;
+
+        return var;
+    }
+}

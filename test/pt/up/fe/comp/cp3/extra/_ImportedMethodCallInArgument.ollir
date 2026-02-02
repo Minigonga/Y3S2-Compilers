@@ -1,0 +1,22 @@
+import io.A;
+
+B {
+
+
+
+
+.construct B().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public static main(args.array.String).V {
+   ret.V ;
+}
+
+.method callPrint(a.A, c.String, b.i32).i32 {
+
+invokevirtual(a.A, "print").V;
+   ret.i32 0.i32;
+}
+
+}

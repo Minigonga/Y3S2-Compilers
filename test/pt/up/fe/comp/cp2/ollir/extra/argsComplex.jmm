@@ -1,0 +1,21 @@
+import io;
+class ArgsComplex {
+
+    public static void main(String[] args) {
+        int x;
+        int y;
+        int result;
+        ArgsComplex k;
+
+        x = 1;
+        y = 2;
+
+        result = k.foo(x + 3, y * 2);
+
+        io.print(result);
+    }
+
+    public int foo(int a, int b) {
+        return a + b;
+    }
+}

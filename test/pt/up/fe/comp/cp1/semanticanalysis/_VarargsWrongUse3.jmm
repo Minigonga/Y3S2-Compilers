@@ -1,0 +1,6 @@
+class VarargsWrongUse3 {
+    int a(int... b) {
+        b= 0; //nao pode
+        return 0;
+    }
+}

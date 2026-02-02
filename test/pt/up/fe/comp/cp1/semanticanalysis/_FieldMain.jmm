@@ -1,0 +1,7 @@
+class FieldMain {
+    int main;
+
+    int foo() {
+        return 0;
+    }
+}

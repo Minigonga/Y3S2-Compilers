@@ -1,0 +1,11 @@
+class MethodCallWithParams {
+    int foo(boolean a) {
+        return 1;
+    }
+
+    int bar() {
+        boolean a;
+        MethodCallWithParams b;
+        return b.foo(a);
+    }
+}

@@ -1,0 +1,39 @@
+import ioPlus;
+
+BooleanField {
+
+
+.field public c.bool;
+
+.construct BooleanField().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public func().bool {
+   putfield(this, c.bool, 0.bool).V;
+
+   tmp0.bool :=.bool getfield(this, c.bool).bool;
+if (tmp0.bool) goto then0;
+
+invokestatic(ioPlus, "printResult", 0.i32).V;
+goto endif0;
+then0:
+
+invokestatic(ioPlus, "printResult", 1.i32).V;
+endif0:
+
+   tmp1.bool :=.bool getfield(this, c.bool).bool;
+ret.bool tmp1.bool;
+}
+
+.method public static main(args.array.String).V {
+   tmp2.BooleanField :=.BooleanField new(BooleanField).BooleanField;
+invokespecial(tmp2.BooleanField, "<init>").V;
+d.BooleanField :=.BooleanField tmp2.BooleanField;
+
+   k.bool :=.bool invokevirtual(d.BooleanField, "func").bool;
+
+   ret.V ;
+}
+
+}

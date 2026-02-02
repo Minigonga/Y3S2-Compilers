@@ -1,0 +1,29 @@
+import ioPlus;
+
+LessThanZero {
+
+
+
+
+.construct LessThanZero().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public static main(args.array.String).V {
+   b.i32 :=.i32 3.i32;
+
+   a.bool :=.bool 0.i32 <.bool b.i32;
+
+   if (a.bool) goto then0;
+
+invokestatic(ioPlus, "printResult", 0.i32).V;
+goto endif0;
+then0:
+
+invokestatic(ioPlus, "printResult", 1.i32).V;
+endif0:
+
+   ret.V ;
+}
+
+}

@@ -1,0 +1,57 @@
+import ioPlus;
+
+LessThanAndCombination {
+
+
+
+
+.construct LessThanAndCombination().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public static main(args.array.String).V {
+   b.i32 :=.i32 3.i32;
+
+   tmp0.bool :=.bool 1.i32 <.bool 2.i32;
+
+if (tmp0.bool) goto then1;
+andTmp1.bool :=.bool 0.bool;
+goto endif1;
+then1:
+tmp1.bool :=.bool 3.i32 <.bool 4.i32;
+
+if (tmp1.bool) goto then0;
+andTmp0.bool :=.bool 0.bool;
+goto endif0;
+then0:
+tmp2.bool :=.bool 5.i32 <.bool 6.i32;
+
+andTmp0.bool :=.bool tmp2.bool;
+endif0:
+
+andTmp1.bool :=.bool andTmp0.bool;
+endif1:
+
+if (andTmp1.bool) goto then2;
+andTmp2.bool :=.bool 0.bool;
+goto endif2;
+then2:
+tmp3.bool :=.bool 0.i32 <.bool b.i32;
+
+andTmp2.bool :=.bool tmp3.bool;
+endif2:
+a.bool :=.bool andTmp2.bool;
+
+   if (a.bool) goto then3;
+
+invokestatic(ioPlus, "printResult", 0.i32).V;
+goto endif3;
+then3:
+
+invokestatic(ioPlus, "printResult", 1.i32).V;
+endif3:
+
+   ret.V ;
+}
+
+}

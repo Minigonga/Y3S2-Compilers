@@ -1,0 +1,6 @@
+class ReturnIntButBool {
+    int foo() {
+        boolean a;
+        return a;
+    }
+}

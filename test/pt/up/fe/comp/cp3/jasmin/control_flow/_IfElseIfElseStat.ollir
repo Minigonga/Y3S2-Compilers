@@ -1,0 +1,46 @@
+import ioPlus;
+
+IfElseIfElseStat {
+
+
+
+
+.construct IfElseIfElseStat().V {
+    invokespecial(this, "<init>").V;
+}
+
+.method public static main(args.array.String).V {
+   a.i32 :=.i32 5.i32;
+
+   b.i32 :=.i32 10.i32;
+
+   tmp0.bool :=.bool a.i32 <.bool b.i32;
+if (tmp0.bool) goto then2;
+tmp1.bool :=.bool b.i32 <.bool a.i32;
+if (tmp1.bool) goto then1;
+tmp2.bool :=.bool b.i32 <.bool a.i32;
+if (tmp2.bool) goto then0;
+
+invokestatic(ioPlus, "printResult", b.i32).V;
+goto endif0;
+then0:
+
+invokestatic(ioPlus, "printResult", b.i32).V;
+endif0:
+
+goto endif1;
+then1:
+
+invokestatic(ioPlus, "printResult", b.i32).V;
+endif1:
+
+goto endif2;
+then2:
+
+invokestatic(ioPlus, "printResult", a.i32).V;
+endif2:
+
+   ret.V ;
+}
+
+}

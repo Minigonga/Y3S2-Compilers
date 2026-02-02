@@ -1,0 +1,15 @@
+import ioPlus;
+class LessThanAndCombination {
+
+
+    public static void main(String[] args) {
+        boolean a;
+        a = 1 < 2 && 2 < 1;
+
+        if (a) {
+            ioPlus.printResult(1);
+        } else {
+            ioPlus.printResult(0);
+        }
+    }
+}

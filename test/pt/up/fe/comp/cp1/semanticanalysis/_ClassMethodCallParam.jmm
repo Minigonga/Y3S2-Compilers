@@ -1,0 +1,7 @@
+class A {
+    void f1(boolean a) {
+    }
+    void f2() {
+        f1(true);
+    }
+}

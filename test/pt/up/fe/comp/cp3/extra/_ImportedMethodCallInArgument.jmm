@@ -1,0 +1,11 @@
+import io.A;
+class B {
+
+    public static void main(String[] args) {
+    }
+
+    int callPrint(A a, int b) {
+        a.print();
+        return 0;
+    }
+}

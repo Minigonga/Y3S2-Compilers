@@ -1,0 +1,6 @@
+class ClassNotImported2 {
+    int foo(A a) {
+
+        return 1;
+    }
+}

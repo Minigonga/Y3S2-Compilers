@@ -1,0 +1,18 @@
+import ioPlus;
+class LessThanZero {
+
+
+    public static void main(String[] args) {
+        boolean a;
+        int b;
+        b = 3;
+        a = b < 0;
+
+        if (a) {
+            ioPlus.printResult(1);
+        } else {
+            ioPlus.printResult(0);
+        }
+
+    }
+}

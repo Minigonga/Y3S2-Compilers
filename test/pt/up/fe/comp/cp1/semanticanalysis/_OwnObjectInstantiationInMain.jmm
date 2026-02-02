@@ -1,0 +1,15 @@
+class ThisOnStaticMain {
+
+    int a;
+
+    public static void main(String[] args) {
+        ThisOnStaticMain b;
+        b = new ThisOnStaticMain();
+    }
+
+    public int foo() {
+        int a;
+        a = 0;
+        return a;
+    }
+}
